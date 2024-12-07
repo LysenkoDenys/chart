@@ -3,7 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Dynamic chart</title>
+    <meta name="description" content="chart to view some data" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" type="module" defer></script>
   </head>
-  <body></body>
+  <body>
+    <div class="wrapper">
+      <div class="chart-container" id="chart"></div>
+      <div class="form-container">
+        <input type="text" id="countryInput" placeholder="Enter country" />
+        <input type="number" id="gdpInput" placeholder="Enter GDP" />
+        <button id="addDataButton">Add</button>
+      </div>
+    </div>
+  </body>
 </html>
